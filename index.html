@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean and brew co.</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5eee6;
+            color: #3b2921;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #3b2921;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav h1 {
+            font-size: 24px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #d9a86c;
+        }
+
+        /* Hero */
+        .hero {
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background:
+                linear-gradient(rgba(40, 25, 18, 0.6), rgba(40, 25, 18, 0.6)),
+                url("https://tse3.mm.bing.net/th/id/OIF.Eix7O5TyA1lC5NLiiBsRvQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3");
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        .hero-content {
+            max-width: 700px;
+            padding: 20px;
+        }
+
+        .hero h2 {
+            font-size: 60px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #c88b4a;
+            color: white;
+            padding: 14px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background-color: #a96e35;
+        }
+
+        /* General sections */
+        section {
+            padding: 70px 8%;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+
+        /* About */
+        .about {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        .about-text h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .about-image {
+            flex: 1;
+        }
+
+        .about-image img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Menu */
+        .menu {
+            background-color: #e9d8c5;
+        }
+
+        .menu-items {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .menu-card {
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .menu-card h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            color: #b16f32;
+            font-weight: bold;
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        /* Contact */
+        .contact {
+            text-align: center;
+        }
+
+        .contact p {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #3b2921;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                gap: 15px;
+            }
+
+            .hero h2 {
+                font-size: 42px;
+            }
+
+            .about {
+                flex-direction: column;
+            }
+
+            .menu-items {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <h1> Bean and brew</h1>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2>Your Daily Cup of necessity</h2>
+
+            <p>
+                
+            </p>
+
+            <a href="#menu" class="button">View Our Menu</a>
+        </div>
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="about">
+
+            <div class="about-text">
+                <h2>Made for you</h2>
+
+                <p>
+                    Bean and brew
+                    built around one simple idea, we would lose our jobs without them.
+                </p>
+
+                <br>
+
+                <p>
+                    We roast our beans so you can drink them.
+                </p>
+            </div>
+
+            <div class="about-image">
+                <img
+                    src="https://th.bing.com/th/id/OIP.vphacW6Sx4kp__FMLZI3bwHaD8?w=296&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+                    alt="Cozy coffee shop">
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+
+        <h2 class="section-title">Our Menu</h2>
+
+        <div class="menu-items">
+
+            <div class="menu-card">
+                <h3> Milk</h3>
+                <p>Read it</p>
+                <p class="price">$5.99</p>
+            </div>
+
+            <div class="menu-card">
+                <h3> Coffee</h3>
+                <p>It's in the name</p>
+                <p class="price">$5.75</p>
+            </div>
+
+            <div class="menu-card">
+                <h3> Cold Brew</h3>
+                <p>Slow-steeped coffee served over ice.</p>
+                <p class="price">$4.75</p>
+            </div>
+
+            <div class="menu-card">
+                <h3> Butter Croissant</h3>
+                <p>Freshly baked, flaky, and buttery.</p>
+                <p class="price">$3.50</p>
+            </div>
+
+            <div class="menu-card">
+                <h3> Chocolate Cookie</h3>
+                <p>Warm chocolate chip cookie baked almost every morning.</p>
+                <p class="price">$999</p>
+            </div>
+
+            <div class="menu-card">
+                <h3> Warm Latte</h3>
+                <p>Creamy milk blended with premium matcha.</p>
+                <p class="price">$5.50</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact"> 
+
+        <h2 class="section-title">Visit Us</h2>
+
+        <p>📍 123 ok ok, Fremont, CA</p>
+        <p>📞 (510) 123-4567</p>
+
+        <br>
+
+        <p><strong>Hours</strong></p>
+        <p>Whenever the teachers or professors wake up</p>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>Trade mark lorem ipsum dolor sit amet, consectetur adipiscing elit. &copy;lorem ipsum dolor sit amet.</p>
+    </footer>
+
+</body>
+</html>
